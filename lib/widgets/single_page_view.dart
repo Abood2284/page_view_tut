@@ -11,7 +11,7 @@ class SinglePageView extends StatefulWidget {
 
 class _SinglePageViewState extends State<SinglePageView> {
   late VideoPlayerController controller;
-  final asset = 'assets/video/sea.mp4';
+  final asset = 'assets/video/video.mp4';
   @override
   void initState() {
     super.initState();

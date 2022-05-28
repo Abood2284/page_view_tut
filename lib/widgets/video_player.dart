@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
@@ -12,9 +13,9 @@ class VideoPlayerWidget extends StatelessWidget {
             alignment: Alignment.topCenter,
             child: buildVideo(),
           )
-        : SizedBox(
+        : const SizedBox(
             height: 20,
-            child: const CircularProgressIndicator(),
+            child: CircularProgressIndicator(),
           );
   }
 

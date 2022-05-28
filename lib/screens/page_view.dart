@@ -10,7 +10,7 @@ class PageViewScreen extends StatefulWidget {
 
 class _PageViewScreenState extends State<PageViewScreen> {
   final PageController _controller = PageController(initialPage: 0);
-  int _currentPage = 0;
+  // int _currentPage = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +21,9 @@ class _PageViewScreenState extends State<PageViewScreen> {
       ),
       body: PageView.builder(
           itemCount: 20,
-          onPageChanged: (position) {
-            _currentPage = position;
-          },
+          // onPageChanged: (position) {
+          //   _currentPage = position;
+          // },
           controller: _controller,
           scrollDirection: Axis.vertical,
           itemBuilder: (context, position) => const SinglePageView()),
